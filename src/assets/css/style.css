@@ -29,6 +29,36 @@
 -------------------------------------------------------------------*/
 
 
+/*--------------------------Last modification----------------------------------------*/
+/*block-menu-landing*/
+:root{
+    --block-with: 350px;
+    --block-height: 280px;
+    --padding-top: 20px;
+}
+
+.container-landing{
+ 
+    margin: auto auto;
+}
+.min-container-landing{
+   position: relative;
+  
+
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 90% !important;
+    }
+}
+@media (min-width:801px){
+
+}
+
+
+
+/*------------------------------------------------------------------*/
+
 /* -------------------------------------------------------------------
 
                         0. General Styles
@@ -66,6 +96,8 @@ img {
     height: auto;
     transition: all 0.3s;
 }
+
+
 
 
 /* texts */
@@ -592,7 +624,7 @@ a:not([href]):not([tabindex]) {
 h2.menu-item {
     position: relative;
     color: #FFF;
-    margin: 50px;
+    margin: 50px 50px 50px 80px;
     font-size: 28px;
     font-weight: 600;
     transition: all 1s ease-out;
@@ -627,7 +659,7 @@ h2.contact.menu-item:before {
 }
 
 .menu-block:hover h2.menu-item:before {
-    top: -20px;
+    top: -5px;
     left: -40px;
 }
 
@@ -647,7 +679,7 @@ h2.menu-item:after {
 }
 
 .menu-block:hover h2.menu-item:after {
-    top: 12px;
+    top: 30px;
     left: -40px;
 }
 
@@ -907,10 +939,10 @@ h2.menu-item:after {
 
 .name-block {
     position: absolute;
-    width: 700px;
-    height: 700px;
+    width:450px;
+    height: 450px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-right: none;
+    /* border-right: none; */
     display: table;
     transition: all 0.5s;
     z-index: 1
@@ -935,7 +967,7 @@ h2.menu-item:after {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     width: 30%;
-    height: 100%;
+    height: 100vh;
     left: 0;
     top: 0;
     border: none;
@@ -949,7 +981,7 @@ h2.menu-item:after {
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    padding: 0 30px;
+    padding: 0 0px;
 }
 
 .menu2 .name-block.reverse,
@@ -964,7 +996,7 @@ h2.menu-item:after {
 .name-block-container {
     display: table-cell;
     vertical-align: middle;
-    padding-left: 240px;
+    padding-left: 80px;
     -ms-transform: rotate(34deg);
     -webkit-transform: rotate(34deg);
     transform: rotate(34deg);
@@ -1036,9 +1068,10 @@ h2.menu-item:after {
 -------------------------------------------------------------------*/
 
 .about-block {
+
     position: absolute;
-    width: 430px;
-    height: 300px;
+    width: var( --block-with);
+    height: var(--block-height);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: none;
     display: table;
@@ -1057,7 +1090,7 @@ h2.menu-item:after {
 .about-block-container {
     display: table-cell;
     vertical-align: middle;
-    padding: 150px 0 0 70px;
+    padding-top: var(--padding-top);
     -ms-transform: rotate(34deg);
     -webkit-transform: rotate(34deg);
     transform: rotate(34deg);
@@ -1415,10 +1448,10 @@ h4.package {
 
 .portfolio-block {
     position: absolute;
-    width: 430px;
-    height: 400px;
+    width: var( --block-with);
+    height: var(--block-height);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: none;
+
     display: table;
     transition: all 0.5s;
     z-index: 1
@@ -1433,6 +1466,7 @@ h4.package {
 }
 
 .portfolio-block-container {
+    padding-top: var(--padding-top);
     display: table-cell;
     vertical-align: middle;
     -ms-transform: rotate(34deg);
@@ -2045,10 +2079,9 @@ h4.package {
 
 .contact-block {
     position: absolute;
-    width: 430px;
-    height: 400px;
+    width: var( --block-with);
+    height: var(--block-height);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-left: none;
     display: table;
     transition: all 0.5s;
     z-index: 1
@@ -2063,6 +2096,7 @@ h4.package {
 }
 
 .contact-block-container {
+    padding-top: var(--padding-top);
     display: table-cell;
     vertical-align: middle;
     -ms-transform: rotate(34deg);
@@ -2211,22 +2245,22 @@ h4.package {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: -190px;
-        top: 10px;
+        left: 30px;
+        top: 119px;
     }
     .about-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 382px;
-        top: -151px;
+        left: 498px;
+        top: 110px;
     }
     .portfolio-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 577px;
-        top: 89px;
+        left: 654px;
+        top: 342px;
     }
     .blog-block {
         -ms-transform: rotate(-34deg);
@@ -2239,8 +2273,8 @@ h4.package {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 1067px;
-        top: 48px;
+        left: 928px;
+        top: 123px;
     }
 }
 
